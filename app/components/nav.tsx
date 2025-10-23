@@ -1,16 +1,19 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const navItems = {
-  '/': {
-    name: 'home',
+  "/": {
+    name: "about",
   },
-  '/blog': {
-    name: 'blog',
+  "#experience": {
+    name: "experience",
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  "#skills": {
+    name: "skills",
   },
-}
+  "#projects": {
+    name: "projects",
+  },
+};
 
 export function Navbar() {
   return (
@@ -30,11 +33,11 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
