@@ -35,6 +35,7 @@
 
 html {
   min-width: 360px;
+  background-color: #282c33;
   font-family: "Fira Code", monospace;
   src: local("Fira Code"),
     url(../node_modules/@fontsource-variable/fira-code/files/fira-code-greek-ext-wght-normal.woff2)

@@ -11,6 +11,7 @@ export default function Page() {
       <h1 className="text-2xl font-semibold tracking-tighter">
         Thomas Martua Parlindungan
       </h1>
+      <hr></hr>
       <h2 className="mb-6 text-xl text-neutral-600 dark:text-neutral-400">
         Frontend{" "}
         <span className="text-mint-500 font-semibold">Web & Mobile</span>{" "}

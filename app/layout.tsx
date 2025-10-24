@@ -54,6 +54,14 @@ export default function RootLayout({
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          {/* <div
+            className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+            style={{
+              background:
+                "background: radial-gradient(600px at 179px 584px, rgba(29, 78, 216, 0.15), transparent 80%);",
+                
+            }}
+          ></div> */}
           <Navbar />
           {children}
           <Footer />
