@@ -30,7 +30,7 @@
 }
 
 @theme {
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-primary-500: oklch(0.72 0.11 178);
 }
 
 html {
