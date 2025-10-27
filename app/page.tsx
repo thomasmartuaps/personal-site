@@ -3,8 +3,8 @@ import { About } from "./components/about";
 
 export default function Page() {
   return (
-    <section className="grid grid-cols-2  gap-4">
-      <div>
+    <section className="lg:flex lg:justify-between lg:gap-4 ">
+      <div className="lg:flex lg:flex-col lg:justify-between lg:py-24">
         <h1 className="text-2xl font-semibold tracking-tighter">
           Thomas Martua Parlindungan
         </h1>
@@ -14,7 +14,7 @@ export default function Page() {
           Engineer
         </h2>
       </div>
-      <div>
+      <div className="lg:max-w-xl">
         <About />
         <div className="my-8">
           <BlogPosts />
