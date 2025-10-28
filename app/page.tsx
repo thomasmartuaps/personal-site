@@ -1,5 +1,6 @@
 import { BlogPosts } from "app/components/posts";
 import { About } from "./components/about";
+import { Experiences } from "./components/experiences";
 
 function ArrowIcon() {
   return (
@@ -69,7 +70,7 @@ export default function Page() {
       <div className="lg:max-w-xl">
         <About />
         <div className="my-8">
-          <BlogPosts />
+          <Experiences />
         </div>
       </div>
     </section>
