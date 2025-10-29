@@ -49,6 +49,12 @@ export default function Header() {
             <p className="ml-2 h-7">github</p>
           </a>
         </li>
+        <li>
+          <a className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100">
+            <ArrowIcon />
+            <p className="ml-2 h-7">thomasmartuaps@gmail.com</p>
+          </a>
+        </li>
       </ul>
     </div>
   );
