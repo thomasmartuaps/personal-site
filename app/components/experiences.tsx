@@ -22,6 +22,9 @@ const experiences = [
 export function Experiences() {
   return (
     <div>
+      <h1 className="mb-6 text-2xl font-semibold tracking-tighter">
+        <span className="text-primary-500">Work</span> Experiences
+      </h1>
       {experiences.map((job, i) => (
         <div
           key={i}
@@ -29,11 +32,11 @@ export function Experiences() {
           // href={`/blog/${post.slug}`}
         >
           <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-            <p className="text-neutral-600 dark:text-neutral-400 w-[150px] tabular-nums">
+            <p className="text-neutral-600 dark:text-neutral-400 md:max-w-[150px] tabular-nums">
               {job.duration}
             </p>
             <div>
-              <p className="text-neutral-900 dark:text-neutral-100 font-semibold tracking-tight">
+              <p className="text-neutral-900 max-md:text-xl dark:text-neutral-100 font-semibold tracking-tight">
                 {job.employer}
               </p>
               <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">
