@@ -54,8 +54,8 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-6xl mx-auto mt-8">
-        <main className="flex-auto min-w-0 max-h-screen mt-6 flex flex-col px-2 lg:px-2">
+      <body className="antialiased max-w-6xl mx-auto">
+        <main className="flex-auto min-w-0 max-h-screen flex flex-col px-2 lg:px-2">
           {/* <div
             className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
             style={{
