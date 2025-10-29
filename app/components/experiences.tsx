@@ -22,7 +22,10 @@ const experiences = [
 export function Experiences() {
   return (
     <div>
-      <h1 className="mb-6 text-2xl font-semibold tracking-tighter">
+      <h1
+        className="mb-6 text-2xl font-semibold tracking-tighter"
+        id={"experiences"}
+      >
         <span className="text-primary-500">Work</span> Experiences
       </h1>
       {experiences.map((job, i) => (
