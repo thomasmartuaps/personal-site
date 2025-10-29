@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { formatDate, getBlogPosts } from "app/blog/utils";
-
 const experiences = [
   {
     employer: "Photon Interactive",
@@ -39,7 +36,7 @@ export function Experiences() {
               {job.duration}
             </p>
             <div>
-              <p className="text-neutral-900 max-md:text-xl dark:text-neutral-100 font-semibold tracking-tight">
+              <p className="text-neutral-900 text-xl dark:text-neutral-100 font-semibold tracking-tight">
                 {job.employer}
               </p>
               <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">
