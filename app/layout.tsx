@@ -55,7 +55,7 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased max-w-6xl mx-auto">
-        <main className="flex-auto min-w-0 max-h-screen flex flex-col px-2 lg:px-2">
+        <main className="flex-auto min-w-0 max-h-screen flex flex-col px-2 lg:px-2 cursor-glow">
           {/* <div
             className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
             style={{
