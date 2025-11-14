@@ -1,5 +1,8 @@
 import { BlogPosts } from "app/components/posts";
 import { About } from "./components/about";
+import MailIcon from "./icons/MailIcon";
+import GithubIcon from "./icons/GithubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
 
 function ArrowIcon() {
   return (
@@ -38,7 +41,7 @@ export default function Page() {
               target="_blank"
               href="https://www.linkedin.com/in/thomas-martua-ps/"
             >
-              <ArrowIcon />
+              <LinkedinIcon />
               <p className="ml-2 h-7">linkedin</p>
             </a>
           </li>
@@ -49,7 +52,7 @@ export default function Page() {
               target="_blank"
               href="https://github.com/thomasmartuaps"
             >
-              <ArrowIcon />
+              <GithubIcon />
               <p className="ml-2 h-7">github</p>
             </a>
           </li>
@@ -60,7 +63,7 @@ export default function Page() {
               target="_blank"
               href="#"
             >
-              <ArrowIcon />
+              <MailIcon />
               <p className="ml-2 h-7">view source</p>
             </a>
           </li>
