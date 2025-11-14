@@ -39,7 +39,7 @@ export default function Header() {
             href="https://www.linkedin.com/in/thomas-martua-ps/"
           >
             <LinkedinIcon />
-            <p className="ml-2 h-7">linkedin</p>
+            <p className="ml-2 h-7">Thomas</p>
           </a>
         </li>
         <li>
@@ -50,7 +50,7 @@ export default function Header() {
             href="https://github.com/thomasmartuaps"
           >
             <GithubIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">thomasmartuaps</p>
           </a>
         </li>
         <li>
