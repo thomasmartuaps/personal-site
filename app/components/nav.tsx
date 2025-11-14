@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const navItems = {
-  "/": {
+  "#about": {
     name: "about",
   },
-  "#experience": {
-    name: "experience",
+  "#experiences": {
+    name: "experiences",
   },
   "#skills": {
     name: "skills",

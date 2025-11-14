@@ -1,78 +1,57 @@
-import { BlogPosts } from "app/components/posts";
 import { About } from "./components/about";
-import MailIcon from "./icons/MailIcon";
-import GithubIcon from "./icons/GithubIcon";
-import LinkedinIcon from "./icons/LinkedinIcon";
+import { Experiences } from "./components/experiences";
+import Header from "./components/header";
 
-function ArrowIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
+const skills = [
+  {
+    category: "Frontend",
+    tech: "React, React Native, NextJs, Typescript, HTML & CSS, Redux, Context API, Tailwind",
+  },
+  {
+    category: "Backend",
+    tech: "NodeJs, Express, NestJs, Typescript, MongoDB, PostgreSQL",
+  },
+  {
+    employer: "Pasaran.com",
+    title: "Full-stack Engineer",
+    duration: "Jan 2021 - Jan 2022",
+  },
+];
 
 export default function Page() {
   return (
     <section className="lg:flex lg:justify-between lg:gap-4 ">
-      <div className="lg:py-24">
-        <h1 className="text-4xl mb-2 font-semibold tracking-tighter">
-          Thomas Martua Parlindungan
-        </h1>
-        <h2 className="mb-6 text-xl text-neutral-600 dark:text-neutral-400">
-          Frontend{" "}
-          <span className="text-primary-500 font-semibold">Web & Mobile</span>{" "}
-          Engineer
-        </h2>
-        <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-          <li>
-            <a
-              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/thomas-martua-ps/"
-            >
-              <LinkedinIcon />
-              <p className="ml-2 h-7">linkedin</p>
-            </a>
-          </li>
-          <li>
-            <a
-              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://github.com/thomasmartuaps"
-            >
-              <GithubIcon />
-              <p className="ml-2 h-7">github</p>
-            </a>
-          </li>
-          <li>
-            <a
-              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-              rel="noopener noreferrer"
-              target="_blank"
-              href="#"
-            >
-              <MailIcon />
-              <p className="ml-2 h-7">view source</p>
-            </a>
-          </li>
-        </ul>
+      <div className="lg:py-24 lg:sticky lg:top-0 lg:max-h-screen">
+        <Header />
       </div>
-      <div className="lg:max-w-xl">
+      <div className="lg:py-24 lg:max-w-xl">
         <About />
         <div className="my-8">
-          <BlogPosts />
+          <Experiences />
+          <div className="my-8">
+            <h1
+              className="mb-6 text-2xl font-semibold tracking-tighter"
+              id={"skills"}
+            >
+              Engineering <span className="text-primary-500">Skills</span>
+            </h1>
+            {skills.map((skill, i) => (
+              <div
+                key={i}
+                className="flex flex-col space-y-1 mb-4"
+                // href={`/blog/${post.slug}`}
+              >
+                <div>
+                  <p className="text-neutral-900 text-xl dark:text-neutral-100 font-semibold tracking-tight">
+                    {skill.category}
+                  </p>
+                  <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">
+                    {skill.tech}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
