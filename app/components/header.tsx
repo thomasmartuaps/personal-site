@@ -1,3 +1,7 @@
+import GithubIcon from "app/icons/GithubIcon";
+import LinkedinIcon from "app/icons/LinkedinIcon";
+import MailIcon from "app/icons/MailIcon";
+
 function ArrowIcon() {
   return (
     <svg
@@ -34,8 +38,8 @@ export default function Header() {
             target="_blank"
             href="https://www.linkedin.com/in/thomas-martua-ps/"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">linkedin</p>
+            <LinkedinIcon />
+            <p className="ml-2 h-7">Thomas</p>
           </a>
         </li>
         <li>
@@ -45,13 +49,13 @@ export default function Header() {
             target="_blank"
             href="https://github.com/thomasmartuaps"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <GithubIcon />
+            <p className="ml-2 h-7">thomasmartuaps</p>
           </a>
         </li>
         <li>
           <a className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100">
-            <ArrowIcon />
+            <MailIcon />
             <p className="ml-2 h-7">thomasmartuaps@gmail.com</p>
           </a>
         </li>

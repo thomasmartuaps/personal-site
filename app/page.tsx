@@ -1,4 +1,3 @@
-import { BlogPosts } from "app/components/posts";
 import { About } from "./components/about";
 import { Experiences } from "./components/experiences";
 import Header from "./components/header";
